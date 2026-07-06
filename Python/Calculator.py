@@ -1,4 +1,4 @@
-def tokenisation(equation):
+def tokenization(equation):
     eq = []
     num = ""
     for i in range(0, len(equation)):
@@ -59,4 +59,4 @@ while True:
     if a == "0":
         break
     else:
-        calculation(tokenisation(a))
+        calculation(tokenization(a))
