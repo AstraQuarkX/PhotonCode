@@ -29,3 +29,39 @@ num.reverse()  # Reverses the original list
 num4 = num[::-1]  # Creates a new list num4 with elements of list num in reverse order 
 
 print(len(num))  # len(list) returns the number of elements in the list
+
+# Simple Statistics with a List of Numbers :
+digits = [1,3,5,7,8,9,100]
+Min_Value = min(digits)         # Min_Value = 1
+Max_Value = max(digits)         # Max_Value = 100
+Sum_of_Values = sum(digits)     # Sum_of_Values = 133
+
+# List Comprehensions : 
+ ## Normal Method :
+  squares = []
+  for i in range(1,10):
+       squares.append(i**2)
+ ## List Comprehension Method (One Line) :
+  squares = [i**2 for i in range(1,10)]
+
+# Slicing a List : 
+ # Creates a new list
+ # Last value is not taken
+  list2 = list1[start:stop:step]
+ # Default values : 
+   # Start - 0
+   # Stop - End of the list
+   # Step - -1
+
+# Copying a List
+ # Assignment (No Copy) :
+  # Both variables refer to the same list.
+  # Changes made through one variable are reflected in the other.
+   list2 = list1
+ # Shallow Copy : 
+  # Creates a new outer list.
+  # Changes to the outer list do not affect the original list.
+  # Nested mutable objects are still shared.
+   list2 = list1[:]       # By Slicing
+   list2 = list1.copy()   # By copy() Method
+   list2 = list(list1)    # By list() Constructor 
