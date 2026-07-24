@@ -12,3 +12,7 @@ numbers = (2,3,4,5)
      numbers = (2,4,6,8)
   # Generator Method :
      numbers = tuple(range(2,9,2))
+
+# Slicing and Indexing are same as lists
+# Values can be added only by concatenation and typing a ',' at the end
+# Tuple elements can't be deleted or updated 
